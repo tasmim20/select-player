@@ -1,15 +1,19 @@
-
+// --pin player calculation
 function pinPlayer(){
     const pinPlayer = document.getElementById('player-rate');
     const perPinPlayerstring = pinPlayer.value; 
     const perPinPlayer = parseFloat(perPinPlayerstring);
+
     const playerExpenses = document.getElementById('player-expenses');
     const playerSelect = document.getElementById('player-number');
-const playerSelect1 = playerSelect.innerText;
+    const playerSelect1 = playerSelect.innerText;
+
     const playerExpensesTotal = perPinPlayer * playerSelect1;
     playerExpenses.innerText = playerExpensesTotal;
 }
 
+
+// ----pin player calculation
    document.getElementById('calculation').addEventListener('click', function(){
    
    pinPlayer();
@@ -17,6 +21,7 @@ const playerSelect1 = playerSelect.innerText;
  })
  
  
+//  ---total expenses--------
  
  document.getElementById('calculate-total').addEventListener('click', function(){
      const managerPin = document.getElementById('manager-rate');

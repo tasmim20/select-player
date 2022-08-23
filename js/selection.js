@@ -1,11 +1,20 @@
-
+/* -------------common function--------------- */
 function selectPlayer(elementId){
     const playerSelection = document.getElementById(elementId);
    const playerName = playerSelection.innerText;
-    const playerNameContainer = document.getElementById('name-container');
-    const li = document.createElement('li');
-    li.innerText = playerName;
-    playerNameContainer.appendChild(li);
+    const playerNameContainer = document.querySelectorAll('#name-container li');
+    if(playerNameContainer.length <= 4){
+      const playerNameContainer2 = document.getElementById('name-container');
+      const li = document.createElement('li');
+      li.innerText = playerName;
+      playerNameContainer2.appendChild(li);
+    }
+    else{
+      alert('Select Only Five!!!!!');
+    
+    }
+
+   
  
  increaseNumber();
 
@@ -13,30 +22,20 @@ function selectPlayer(elementId){
 
     
 }
-  
+
 function disabled(nameId){
   let btnDisable = document.getElementById(nameId);
 if (btnDisable) {
-  // btnDisable.setAttribute('name', 'send');
   btnDisable.setAttribute('style', 'background-color: gray');
   btnDisable.setAttribute('disabled', '');
- 
+
 }
 }
 
-// function warningfor(){
-//  const selectPlayerNumber = document.getElementById('player-number');
-// //  var playerNumber = 5;
-// //  var playerNumber = selectPlayerNumber;
 
-//   if(selectPlayerNumber > 5 ){
-//     alert('no more you select');
-//   }
-  
-// }
-
+/*---------------- add event handler in button----------------*/
 document.getElementById('btn-select1').addEventListener('click', function(){
-selectPlayer('player1')
+selectPlayer('player1');
 
 disabled('btn-select1');
 
@@ -44,33 +43,33 @@ disabled('btn-select1');
 
 })
 document.getElementById('btn-select2').addEventListener('click', function(){
- selectPlayer('player2')
+ selectPlayer('player2');
 
  disabled('btn-select2');
 
   
 })
 document.getElementById('btn-select3').addEventListener('click', function(){
-  selectPlayer('player3')
+  selectPlayer('player3');
 
   disabled('btn-select3');
 
   
 })
 document.getElementById('btn-select4').addEventListener('click', function(){
-  selectPlayer('player4')
+  selectPlayer('player4');
 
   disabled('btn-select4');
   
 })
 document.getElementById('btn-select5').addEventListener('click', function(){
- selectPlayer('player5')
+ selectPlayer('player5');
 
  disabled('btn-select5');
   
 })
 document.getElementById('btn-select6').addEventListener('click', function(){
-selectPlayer('player6')
+selectPlayer('player6');
 
 disabled('btn-select6');
   
