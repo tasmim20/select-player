@@ -2,10 +2,22 @@ body{
 
     background-color: #141212;
 }
+.title{
+    color:  #FF5E19;
+    font-family: 'Berkshire Swash'
+}
 
+header{
+    height: 70vh;
+}
+.head-part{
+    margin-top: 200px;
+   
+}
 section{
     margin-left: 100px;
     margin-right: 100px;
+    margin-top: 50px;
    
 }
 .button{
@@ -31,4 +43,10 @@ margin-top: 13px;
 margin-left: 2px;
 margin-right: 2px;
 
+}
+
+
+.box{
+    height: 354px;
+    width: 200px;
 }
