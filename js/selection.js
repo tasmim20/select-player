@@ -13,13 +13,6 @@ function selectPlayer(elementId){
       alert('Select Only Five!!!!!');
     
     }
-
-   
- 
- increaseNumber();
-
-
-
     
 }
 
